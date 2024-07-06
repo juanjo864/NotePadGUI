@@ -1,0 +1,15 @@
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas.csproj.AssemblyReference.cache
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\MainWindow.g.cs
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\App.g.cs
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas_MarkupCompile.cache
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas_MarkupCompile.lref
+D:\Proyecto C#\Blocdenotas\Blocdenotas\bin\Debug\Blocdenotas.exe.config
+D:\Proyecto C#\Blocdenotas\Blocdenotas\bin\Debug\Blocdenotas.exe
+D:\Proyecto C#\Blocdenotas\Blocdenotas\bin\Debug\Blocdenotas.pdb
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\MainWindow.baml
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas.g.resources
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas.Properties.Resources.resources
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas.csproj.GenerateResource.cache
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas.csproj.CoreCompileInputs.cache
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas.exe
+D:\Proyecto C#\Blocdenotas\Blocdenotas\obj\Debug\Blocdenotas.pdb

@@ -1,0 +1,126 @@
+﻿<Window x:Class="Blocdenotas.NotePadGui"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blocdenotas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <Menu x:Name="menu" Grid.Row="0" >
+            <MenuItem  Header="archivo" >
+                <MenuItem
+                   x:Name="nuevos"
+                   Click="nuevo"
+                   Header="_nuevo"
+                   InputGestureText="Ctrl+N" 
+                   />
+                <MenuItem
+                   x:Name="guardado"
+                   Click="guardar"
+                   Header="_guardar"
+                   InputGestureText="Ctrl+G" />
+                <MenuItem
+                   x:Name="abrir"
+                   Click="open"
+                   Header="_abrir"
+                   InputGestureText="Ctrl+O" />
+                <MenuItem
+                   Name="guardarcomos"
+                   Click="guardarcomo"
+                   Header="_guardar como"
+                   InputGestureText="Ctrl+Alt+G" />
+                <Separator />
+                <MenuItem
+                   x:Name="impresion"
+                   Click="imprimir"
+                   Header="imprimir"
+                   InputGestureText="Ctrl+I" />
+                <Separator />
+                <MenuItem
+                   x:Name="exit"
+                   Click="salir"
+                   Header="salir"
+                   InputGestureText="Ctrl+S" />
+            </MenuItem>
+            <MenuItem Header="Edicion">
+                <MenuItem
+                   x:Name="cortar1"
+                   Click="cortar"
+                   Header="cortar"
+                   InputGestureText="Ctrl+C"
+                   IsEnabled="False" />
+                <MenuItem
+                   x:Name="pegar1"
+                   Click="pegar"
+                   Header="pegar"
+                   InputGestureText="Ctrl+V"
+                   IsEnabled="False" />
+                <MenuItem
+                   x:Name="eliminar1"
+                   Click="eliminar"
+                   Header="eliminar"
+                   InputGestureText="Ctrl+D"
+                   IsEnabled="False" />
+                <MenuItem
+                   x:Name="copiar1"
+                   Click="copiar"
+                   Header="copiar"
+                   InputGestureText="Ctrl+P"
+                   IsEnabled="false" />
+                <Separator />
+                <MenuItem
+                   x:Name="seleccionar"
+                   Click="seleccionartodo"
+                   Header=" seleccionar todo"
+                   InputGestureText="Ctrl+Z" />
+            </MenuItem>
+            <MenuItem Header="Formato">
+                <MenuItem
+               x:Name="fuentes"
+               Header="Fuente"
+                Click="fuente"
+                InputGestureText="Ctrl+F" 
+           />
+            </MenuItem>
+            <MenuItem Header="Ayuda">
+                <MenuItem
+                   x:Name="acercades"
+                   Click="acercade"
+                   Header="a cerca de"
+                   InputGestureText="Ctrl+L" />
+            </MenuItem>
+        </Menu>
+        <TextBox
+           Grid.Row="1"
+           x:Name="hoja"
+           DockPanel.Dock="Top"
+           AcceptsReturn="True"
+           SelectionChanged="lineasycolumnas"
+           TextChanged="cambio"
+           TextWrapping="Wrap"
+           VerticalScrollBarVisibility="Auto"    
+           />
+        <StatusBar Height="28" Grid.Row="2">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="340" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem Margin="0,0,0,2">
+                <TextBlock x:Name="letras" />
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
